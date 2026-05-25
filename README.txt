@@ -49,16 +49,21 @@ PROJE KLASÖR YAPISI
 │   ├── best_model.pkl        # En başarılı model (Logistic Regression)
 │   └── scaler.pkl            # Giriş verilerini ölçeklemek için kaydedilmiş RobustScaler
 ├── plots/
-│   ├── shap_summary.png      # SHAP Küresel Özellik Önem Sıralaması grafiği
-│   └── shap_local.png        # SHAP Waterfall Plot (Müşteri bazlı yerel açıklama)
+│   ├── eda_churn_dist.png    # EDA: Churn sınıf dağılımı grafiği
+│   ├── eda_tenure_churn.png  # EDA: Müşteri ömrü (tenure) ve Churn kutu grafiği
+│   ├── eda_correlation.png   # EDA: Sürekli sayısal değişkenlerin korelasyon matrisi
+│   ├── shap_summary.png      # SHAP: Küresel özellik önem sıralaması grafiği
+│   └── shap_local.png        # SHAP: Waterfall yerel müşteri tahmin açıklaması grafiği
 ├── kod/
 │   ├── preprocess.py         # Uçtan uca veri ön işleme ve temizlik betiği
 │   ├── model_training.py     # OOP tabanlı model eğitimi, Pipeline SMOTE ve 10-Fold CV
-│   ├── shap_analysis.py      # Küresel ve yerel SHAP analiz kodları (Linear/Tree Explainer uyumlu)
+│   ├── shap_analysis.py      # Küresel ve yerel SHAP analiz kodları
+│   ├── generate_eda.py       # Keşifsel Veri Analizi (EDA) grafik üretim betiği
+│   ├── generate_docx.py      # Word formatındaki akademik raporu derleyen betik
 │   └── app.py                # Streamlit Canlı Karar Destek Arayüzü
 ├── rapor.docx                # Word formatında hazırlanmış 10 sayfalık akademik proje raporu
-├── README.md
-├── README.txt 
+├── README.md                 # GitHub dökümantasyonu (Markdown)
+├── README.txt                # Plain-text formatında proje dökümantasyonu
 └── requirements.txt          # Gerekli Python kütüphaneleri listesi
 
 ------------------------------------------------------------------------
